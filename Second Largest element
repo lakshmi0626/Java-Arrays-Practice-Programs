@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class SecondLargest {
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int[] arr=new int[n];
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+        int first=Integer.MIN_VALUE;
+        int second=Integer.MIN_VALUE;
+        for(int i=0;i<n;i++){
+            if(arr[i]>first){
+                second=first;
+                first=arr[i];
+            }else if(arr[i]>second && arr[i]!=first){
+                second=arr[i];
+            }
+        }
+        System.out.println("Second Largest: " +second);
+    }
+}
+
+
+output:
+"C:\Program Files\Java\jdk-26\bin\java.exe" "-javaagent:C:\Users\HP\AppData\Local\Programs\IntelliJ IDEA 2025.3.2\lib\idea_rt.jar=49402" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath "C:\Users\HP\IdeaProjects\Java Programs1\out\production\Java Programs1" SecondLargest
+5
+39 75 40 15 4
+Second Largest: 40
+
+Process finished with exit code 0
