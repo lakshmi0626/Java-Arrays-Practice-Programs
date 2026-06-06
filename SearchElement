@@ -1,0 +1,39 @@
+import java.util.Scanner;
+public class SearchElement {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        int key = sc.nextInt();
+        boolean found = false;
+        int position = -1;
+        for (int i = 0; i < n; i++) {
+            if (arr[i] == key) {
+                found = true;
+                position = i;
+                break;
+            }
+        }
+        if (found) {
+            System.out.println("Element Found");
+            System.out.println("Index: " + position);
+        } else {
+            System.out.println("Element Not Found");
+        }
+        sc.close();
+    }
+}
+
+
+output:
+"C:\Program Files\Java\jdk-26\bin\java.exe" "-javaagent:C:\Users\HP\AppData\Local\Programs\IntelliJ IDEA 2025.3.2\lib\idea_rt.jar=56778" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath "C:\Users\HP\IdeaProjects\Java Programs1\out\production\Java Programs1" SearchElement
+5
+45 35 23 12 34
+12
+Element Found
+Index: 3
+
+Process finished with exit code 0
