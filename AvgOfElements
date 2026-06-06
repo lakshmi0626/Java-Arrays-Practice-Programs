@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class AvgOfArray {
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int[] arr=new int[n];
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+        int sum=0;
+        for(int i=0;i<n;i++) {
+            sum += arr[i];
+        }
+            double avg=(double)sum/n;
+        System.out.println("Average of array: " +avg);
+    }
+}
+
+
+output:
+"C:\Program Files\Java\jdk-26\bin\java.exe" "-javaagent:C:\Users\HP\AppData\Local\Programs\IntelliJ IDEA 2025.3.2\lib\idea_rt.jar=64397" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath "C:\Users\HP\IdeaProjects\Java Programs1\out\production\Java Programs1" AvgOfArray
+4
+3 4 6 2
+Average of array: 3.75
+
+Process finished with exit code 0
