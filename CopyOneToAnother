@@ -1,0 +1,34 @@
+import java.util.Scanner;
+public class CopiedArray {
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int[] arr1=new int[n];
+        int[] arr2=new int[n];
+        for(int i=0;i<n;i++){
+            arr1[i]=sc.nextInt();
+        }
+        for(int i=0;i<n;i++){
+            arr2[i]=arr1[i];
+        }
+        for(int i=0;i<n;i++){
+            System.out.print("Original Array:  ");
+            System.out.print(arr1[i]+" ");
+        }
+        System.out.println();
+        for(int i=0;i<n;i++){
+            System.out.print("Copied Array:  ");
+            System.out.print(arr2[i]+" ");
+        }
+    }
+}
+
+
+
+output:
+"C:\Program Files\Java\jdk-26\bin\java.exe" "-javaagent:C:\Users\HP\AppData\Local\Programs\IntelliJ IDEA 2025.3.2\lib\idea_rt.jar=59530" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath "C:\Users\HP\IdeaProjects\Java Programs1\out\production\Java Programs1" CopiedArray
+4
+23 21 13 12
+Original Array:  23 Original Array:  21 Original Array:  13 Original Array:  12 
+Copied Array:  23 Copied Array:  21 Copied Array:  13 Copied Array:  12 
+Process finished with exit code 0
