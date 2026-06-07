@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Reverse {
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int[] arr=new int[n];
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+        for(int i=n-1;i>=0;i--){
+            System.out.println(arr[i]+" ");
+        }
+    }
+}
+
+
+output:
+"C:\Program Files\Java\jdk-26\bin\java.exe" "-javaagent:C:\Users\HP\AppData\Local\Programs\IntelliJ IDEA 2025.3.2\lib\idea_rt.jar=58601" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath "C:\Users\HP\IdeaProjects\Java Programs1\out\production\Java Programs1" Reverse
+5
+4 6 3 2 1
+1 
+2 
+3 
+6 
+4 
+
+Process finished with exit code 0
